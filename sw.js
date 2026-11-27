@@ -1,5 +1,5 @@
 /* Adeba Studio: offline shell, scoped versioned cache. No background network services. */
-const PREFIX='adeba-tib-shell-'+encodeURIComponent(self.registration.scope)+'-', CACHE=PREFIX+'v43-temporal';
+const PREFIX='adeba-tib-shell-'+encodeURIComponent(self.registration.scope)+'-', CACHE=PREFIX+'v44-polish';
 const INDEX=new URL('index.html',self.registration.scope).href;
 const ROOT=new URL('./',self.registration.scope).href;
 self.addEventListener('install',event=>event.waitUntil((async()=>{const response=await fetch(INDEX,{cache:'reload'});if(!response.ok)throw new Error('Game shell unavailable');const cache=await caches.open(CACHE);await cache.put(INDEX,response);})()));
